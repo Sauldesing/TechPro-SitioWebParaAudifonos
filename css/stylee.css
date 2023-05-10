@@ -4,7 +4,7 @@
     --secundario:#00DA55;
     --gris: #3B3B3B;
     --blanco:#FFFFFF;
-    --negro: 1F1E1E;
+    --negro: #1F1E1E;
     --grisClaro: #e1e1e1;
 
     --separacion: 5rem;
@@ -62,4 +62,24 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+/** Header **/
+
+.header{
+    background-color: var(--negro);
+    padding: calc(var(--separacion) * 3)0;
+    color: var(--blanco);
+}
+
+.header img{
+    width: 100%;
+    height: auto;
+}
+
+@media( min-width: 768px){
+    .contenido-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
